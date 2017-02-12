@@ -91,7 +91,7 @@
     subscribe('lazyMan', str);
     setTimeout(function(){
         publish();
-    }, 0);
+    }, 0);    // very important, to put publish to the end after all chaining are added to the task list
     return new LazyMan();
   }
 
